@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg  navbar bg-success " data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="http://www.jamiaislamiasanabil.com">
+        <img src="sanabil-logo.png" alt="Logo" width="150px" height="30px" class="d-inline-block align-text-top">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link " href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="syllabus.html">Syllabus</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active"  aria-current="page" href="#">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.jamiaislamiasanabil.com" target="_blank">Official Website</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container my-5">
+    <h2 class="text-center text-success fw-bold mb-4">Contact Us for Suggestions & Corrections</h2>
+    <p class="text-center text-muted mb-4">I am a student who built this website to help the school. Feel free to suggest improvements or point out any corrections below.</p>
+  
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <form action="https://formspree.io/f/xbloyqza" method="POST">
+          <div class="mb-3">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="name" name="name" required placeholder="Enter your full name">
+          </div>
+  
+          <div class="mb-3">
+            <label for="email" class="form-label">Your Email</label>
+            <input type="email" class="form-control" id="email" name="_replyto" required placeholder="example@email.com">
+          </div>
+  
+          <div class="mb-3">
+            <label for="type" class="form-label">Feedback Type</label>
+            <select class="form-select" id="type" name="type" required>
+              <option value="">-- Select Feedback Type --</option>
+              <option value="correction">Correction in Information</option>
+              <option value="suggestion">Suggestion for Improvement</option>
+              <option value="appreciation">Appreciation</option>
+            </select>
+          </div>
+  
+          <div class="mb-3">
+            <label for="message" class="form-label">Your Message</label>
+            <textarea class="form-control" id="message" name="message" rows="5" required placeholder="Write your message here..."></textarea>
+          </div>
+  
+          <div class="d-grid">
+            <button type="submit" class="btn btn-success btn-lg">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  <footer class="bg-success text-light pt-4 pb-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <h5>Jamia Islamia Sanabil</h5>
+          <p class="small">Opp. Kalindi Kunj, Abul Fazal Enclave-II P. Box. No. 9759, New Delhi-110025, India</p>
+          </p>
+        </div>
+        <div class="col-md-3 mb-3">
+          <h6>Quick Links</h6>
+          <ul class="list-unstyled small">
+            <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+            <li><a href="syllabus.html" class="text-light text-decoration-none">Syllabus</a></li>
+            <li><a href="gallery.html" class="text-light text-decoration-none">Gallery</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-3">
+          <h6>Contact</h6>
+          <p class="small mb-1">Phone: +91-11-47533812, 26981827</p>
+          <p class="small mb-1">Email: <a href="mailto:jis1980.info@gmail.com"
+              class="text-light text-decoration-none">jis1980.info@gmail.com</a></p>
+          <p class="small">Website: <a href="http://www.jamiaislamiasanabil.com" class="text-light text-decoration-none"
+              target="_blank">www.jamiaislamiasanabil.com</a></p>
+        </div>
+      </div>
+      <div class="text-center border-top pt-3">
+        <small>&copy; 2025 Student Project | Designed by <a
+            href="https://www.instagram.com/manzar_alam_6305?igsh=czIxZTZ6ZXB1czNu"
+            class="text-light text-decoration-none" target="_blank">Manzar Alam</a> to support the students of
+          Sanabil.</small>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

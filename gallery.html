@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Syllabus</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg  navbar bg-success " data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="http://www.jamiaislamiasanabil.com">
+                <img src="sanabil-logo.png" alt="Logo" width="150px" height="30px"
+                    class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link"  href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page"  href="#">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="syllabus.html">Syllabus</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://www.jamiaislamiasanabil.com" target="_blank">Official Website</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container py-5">
+        <h2 class="text-center text-success mb-4">Our Gallery</h2>
+        <div class="row g-4">
+          <!-- Image 1 -->
+          <div class="col-md-4">
+            <img src="Student.jpeg" class="img-fluid rounded border shadow-sm gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Gallery Image 1">
+          </div>
+          <!-- Image 2 -->
+          <div class="col-md-4">
+            <img src="baramdah.jpeg" class="img-fluid rounded border shadow-sm gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Gallery Image 2">
+          </div>
+          <!-- Image 3 -->
+          <div class="col-md-4">
+            <img src="chandlier.jpeg" class="img-fluid rounded border shadow-sm gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Gallery Image 3">
+          </div>
+        </div>
+      
+        <!-- Message -->
+        <div class="text-center text-muted mt-4 fs-5">
+          More images will come soon...
+        </div>
+      </div>
+      
+      <!-- Modal for Enlarged Image -->
+      <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content bg-light">
+            <div class="modal-body p-0">
+              <img id="modalImage" src="" class="w-100 rounded" alt="Enlarged Image">
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Script to Set Modal Image -->
+      <script>
+        document.querySelectorAll('.gallery-img').forEach(img => {
+          img.addEventListener('click', function () {
+            const modalImg = document.getElementById('modalImage');
+            modalImg.src = this.src;
+            modalImg.alt = this.alt;
+          });
+        });
+      </script>
+    <footer class="bg-success text-light pt-4 pb-2">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <h5>Jamia Islamia Sanabil</h5>
+              <p class="small">Opp. Kalindi Kunj, Abul Fazal Enclave-II P. Box. No. 9759, New Delhi-110025, India</p>
+              </p>
+            </div>
+            <div class="col-md-3 mb-3">
+              <h6>Quick Links</h6>
+              <ul class="list-unstyled small">
+                <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+                <li><a href="syllabus.html" class="text-light text-decoration-none">Syllabus</a></li>
+                <li><a href="#" class="text-light text-decoration-none active">Gallery</a></li>
+                <li><a href="contactus.html" class="text-light text-decoration-none">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 mb-3">
+              <h6>Contact</h6>
+              <p class="small mb-1">Phone: +91-11-47533812, 26981827</p>
+              <p class="small mb-1">Email: <a href="mailto:jis1980.info@gmail.com"
+                  class="text-light text-decoration-none">jis1980.info@gmail.com</a></p>
+              <p class="small">Website: <a href="http://www.jamiaislamiasanabil.com" class="text-light text-decoration-none"
+                  target="_blank">www.jamiaislamiasanabil.com</a></p>
+            </div>
+          </div>
+          <div class="text-center border-top pt-3">
+            <small>&copy; 2025 Student Project | Designed by <a
+                href="https://www.instagram.com/manzar_alam_6305?igsh=czIxZTZ6ZXB1czNu"
+                class="text-light text-decoration-none" target="_blank">Manzar Alam</a> to support the students of
+              Sanabil.</small>
+          </div>
+        </div>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+      <script>
+        AOS.init({
+          duration: 1000,
+          once: true
+        });
+      </script>
+    
+      <script src="https://cdn.botpress.cloud/webchat/v2.4/inject.js"></script>
+      <script src="https://files.bpcontent.cloud/2025/05/03/06/20250503062228-0G56HHCY.js"></script>
+    
+    
+    </body>
+    
+    </html>
